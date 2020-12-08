@@ -4,7 +4,11 @@ namespace Calendar
     {
         public bool IsLeapYear(int Year)
         {
-            if (Year % 100 == 0)
+            if (Year % 400 == 0)
+            {
+                return true;
+            }
+            else if (Year % 100 == 0)
             {
                 return false;
             }
